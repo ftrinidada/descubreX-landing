@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+/* Estilos globales sin @apply de tokens custom */
+@layer base {
+  html, body {
+    background-color: #000000; /* fondo */
+    color: #FFFFFF;            /* texto */
+    scroll-behavior: smooth;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  a {
+    color: #EB376A;            /* brand */
+    transition: color .2s ease;
+  }
+  a:hover {
+    color: #00AD12;            /* accent */
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { background-color: #EB376A; border-radius: 4px; }
+::-webkit-scrollbar-track { background-color: #111; }
